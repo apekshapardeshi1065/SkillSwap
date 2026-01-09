@@ -1,0 +1,224 @@
+/* .skills-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+ 
+}
+
+.skills-content {
+  flex: 1;
+  padding: 30px;
+  
+} */
+
+.skills-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f8; /* light mode background */
+}
+
+.skills-content {
+  flex: 1;
+  padding: 30px;
+  /* margin-left ka option bhi hai agar sidebar fixed hai */
+}
+
+
+
+
+
+
+
+
+h2 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.search-form button:hover {
+  background-color: #4338ca;
+}
+
+/* Vertical stacked cards */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+}
+
+.user-info h3 {
+  margin: 0;
+  color: #111827;
+}
+
+.user-info p {
+  margin: 5px 0 12px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.skill-badge {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.no-skill {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.swap-btn {
+  align-self: flex-start;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.swap-btn:hover {
+  background-color: #4338ca;
+}
+
+/* ---------------- Dark Mode ---------------- */
+/* .skills-page.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.skills-page.dark .skills-content {
+  background-color: #1e293b;
+  color: #e5e7eb;
+  padding: 30px;
+  border-radius: 12px;
+} */
+
+.skills-page.dark {
+  background-color: #1f2937; /* subtle dark gray */
+  color: #e5e7eb;
+
+}
+
+.skills-page.dark .skills-content {
+  color: #f1f5f9;
+  
+  padding: 30px;
+  border-radius: 12px;
+}
+
+
+
+
+
+.skills-page.dark h2 {
+  color: #e5e7eb;
+}
+
+.skills-page.dark .skill-card {
+  background-color: #1e293b;
+  color: #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.skills-page.dark .user-info p {
+  color: #e5e7eb;
+}
+
+.skills-page.dark .skill-badge {
+  background-color: #4f46e5;
+  color: #e5e7eb;
+}
+
+.skills-page.dark .swap-btn {
+  background-color: #6366f1;
+  color: #e5e7eb;
+}
+
+.skills-page.dark .swap-btn:hover {
+  background-color: #4f46e5;
+}
+
+.skills-page.dark .no-skill {
+  color: #94a3b8;
+} 
+
+/* Dark mode for Skills page */
+.skills-page.dark .skill-card {
+  background-color: #1e293b; /* card background */
+  color: #f1f5f9; /* text color white */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.skills-page.dark .skill-card h3,
+.skills-page.dark .skill-card p {
+  color: #f1f5f9; /* username & email text white */
+}
+
+.skills-page.dark .skill-badge {
+  background-color: #4f46e5; /* skill badge color */
+  color: #f1f5f9; /* badge text white */
+}
+
+.skills-page.dark .swap-btn {
+  background-color: #6366f1;
+  color: #f1f5f9;
+}
+
+.skills-page.dark .swap-btn:hover {
+  background-color: #4f46e5;
+}
+
+.skills-page.dark .no-skill {
+  color: #94a3b8; /* placeholder / empty text */
+}

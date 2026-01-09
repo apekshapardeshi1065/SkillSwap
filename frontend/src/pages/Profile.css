@@ -1,0 +1,151 @@
+/* ---------- Profile Container ----------
+.profile-container {
+  padding: 30px;
+  flex: 1;
+  background: #f4f6fa;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Headings */
+/* 
+
+/* ---------- Profile Container ---------- */
+.profile-container {
+  padding: 30px;
+  flex: 1;
+  background: #f4f6fa;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Headings */
+.profile-container h2,
+.profile-container h3 {
+  color: inherit;
+}
+
+/* Inputs */
+.profile-info input,
+.profile-skills input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a67d8;
+}
+
+/* Skills List */
+.profile-skills ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.profile-skills li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Remove Skill Button */
+.remove-btn {
+  margin-left: auto;
+  background: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #d9363e;
+}
+
+/* Avatar */
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.avatar-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4f46e5;
+}
+
+/* ---------------- Dark Mode ---------------- */
+.profile-container.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.profile-container.dark input,
+.profile-container.dark .profile-skills input {
+  background: #1e293b;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+.profile-container.dark .profile-skills li {
+  background: #1e293b;
+  color: #e5e7eb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-container.dark .remove-btn {
+  background: #ef4444;
+}
+
+.profile-container.dark .remove-btn:hover {
+  background: #dc2626;
+}
+
+.profile-container.dark button {
+  background-color: #6366f1;
+}
+
+.profile-container.dark button:hover {
+  background-color: #4f46e5;
+}
+
+.profile-container.dark .avatar-preview {
+  border: 2px solid #818cf8;
+}

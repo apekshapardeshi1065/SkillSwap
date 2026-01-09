@@ -1,0 +1,106 @@
+.users-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.users-content {
+  flex: 1;
+  padding: 30px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #5a67d8;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-info h3 {
+  margin: 0;
+  color: #333;
+}
+
+.user-info p {
+  margin: 5px 0 10px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.skill-badge {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.no-skill {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.request-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #667eea;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.request-btn:hover {
+  background-color: #5a67d8;
+}

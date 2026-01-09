@@ -1,0 +1,143 @@
+/* ===================== */
+/* DASHBOARD LIGHT MODE */
+/* ===================== */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 30px;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #5a67d8;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.user-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.user-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.user-card button:hover {
+  background-color: #5a67d8;
+}
+
+/* ===================== */
+/* 🌙 DARK MODE STYLES (SUBTLE) */
+/* ===================== */
+.dashboard-container.dark {
+  background: #1f2937; /* subtle dark gray instead of full black */
+}
+
+.dashboard-container.dark .dashboard-content {
+  color: #f1f5f9;
+}
+
+.dashboard-container.dark h2 {
+  color: #f1f5f9;
+}
+
+.dashboard-container.dark .search-form input {
+  background-color: #374151; /* dark gray input */
+  color: #f1f5f9;
+  border: 1px solid #4b5563;
+}
+
+.dashboard-container.dark .search-form input::placeholder {
+  color: #9ca3af;
+}
+
+.dashboard-container.dark .search-form button {
+  background-color: #4c51bf;
+}
+
+.dashboard-container.dark .search-form button:hover {
+  background-color: #434190;
+}
+
+.dashboard-container.dark .user-card {
+  background: #374151; /* lighter dark gray for cards */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-container.dark .user-card h3 {
+  color: #f1f5f9;
+}
+
+.dashboard-container.dark .user-card p {
+  color: #d1d5db;
+}
+
+.dashboard-container.dark .user-card button {
+  background-color: #4c51bf;
+}
+
+.dashboard-container.dark .user-card button:hover {
+  background-color: #434190;
+}
+

@@ -1,0 +1,156 @@
+.requests-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+}
+
+.requests-content {
+  flex: 1;
+  padding: 30px;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.request-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.request-card:hover {
+  transform: translateY(-3px);
+}
+
+.request-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.status {
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.status.accepted {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status.rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.request-actions button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.accept-btn {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.accept-btn:hover {
+  background-color: #4338ca;
+}
+
+.reject-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.reject-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* ---------------- Dark Mode ---------------- */
+.requests-page.dark {
+   background-color: #0f172a; 
+   
+  color: #e5e7eb;
+}
+
+.requests-page.dark .requests-content {
+  background-color: #1e293b;
+  color: #e5e7eb;
+  
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.requests-page.dark h2 {
+  color: #e5e7eb;
+}
+
+.requests-page.dark .request-card {
+  background-color: #1e293b;
+  color: #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.requests-page.dark .request-info p {
+  color: #e5e7eb;
+}
+
+.requests-page.dark .status.pending {
+  background-color: #fbbf24;
+  color: #0f172a;
+}
+
+.requests-page.dark .status.accepted {
+  background-color: #22c55e;
+  color: #0f172a;
+}
+
+.requests-page.dark .status.rejected {
+  background-color: #ef4444;
+  color: #0f172a;
+}
+
+.requests-page.dark .request-actions button {
+  color: #e5e7eb;
+}
+
+.requests-page.dark .accept-btn {
+  background-color: #6366f1;
+}
+
+.requests-page.dark .accept-btn:hover {
+  background-color: #4f46e5;
+}
+
+.requests-page.dark .reject-btn {
+  background-color: #f87171;
+}
+
+.requests-page.dark .reject-btn:hover {
+  background-color: #ef4444;
+}
