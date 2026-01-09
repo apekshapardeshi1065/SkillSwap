@@ -1,30 +1,3 @@
-// const express = require("express");
-// const mongoose = require("mongoose");
-// const dotenv = require("dotenv");
-// const cors = require("cors");
-
-// dotenv.config();
-// const app = express();
-// const auth = require("./routes/auth");
-
-
-
-// app.use("/api/auth", authRoutes);
-
-
-
-// // Middleware
-// app.use(express.json());
-// // app.use(cors());
-
-
-
-// app.use(cors({
-//   origin: "http://localhost:3000", // frontend port
-//   credentials: true
-// }));
-
-
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";

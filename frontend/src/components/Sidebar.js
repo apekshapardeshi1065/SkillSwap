@@ -1,33 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// const Sidebar = () => {
-//   return (
-//     <div style={styles.sidebar}>
-//       <h3>Menu</h3>
-//       <ul style={styles.ul}>
-//         <li><Link to="/dashboard" style={styles.link}>Dashboard</Link></li>
-//         <li><Link to="/profile" style={styles.link}>Profile</Link></li>
-//         <li><Link to="/skills" style={styles.link}>Skills</Link></li>
-//       </ul>
-//     </div>
-//   );
-// };
-
-// const styles = {
-//   sidebar: {
-//     width: "200px",
-//     minHeight: "100vh",
-//     backgroundColor: "#f7fafc",
-//     padding: "20px",
-//     boxShadow: "2px 0 5px rgba(0,0,0,0.1)"
-//   },
-//   ul: { listStyle: "none", padding: 0 },
-//   link: { textDecoration: "none", color: "#2d3748", display: "block", padding: "10px 0" }
-// };
-
-// export default Sidebar;
-
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";

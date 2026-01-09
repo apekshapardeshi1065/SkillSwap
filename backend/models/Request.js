@@ -1,11 +1,3 @@
-// const requestSchema = new mongoose.Schema({
-//   from: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-//   to: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-//   skill: String,
-//   status: { type: String, default: "pending" }, // pending / accepted / rejected
-// });
-
-
 import mongoose from "mongoose";
 
 const requestSchema = new mongoose.Schema({
