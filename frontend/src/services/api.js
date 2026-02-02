@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://skillswap-backend-b9h3.onrender.com",
+  baseURL: "http://localhost:5000/api",
 });
 
 export default API;
